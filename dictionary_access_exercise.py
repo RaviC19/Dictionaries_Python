@@ -1,7 +1,7 @@
-# The food  variable will store a randomly chosen food string like "gummy bear" or "morning bun".  Some of these items are in the bakery_stock  dictionary, and some are not.
-# Print out a string depending on if food  is a value in bakery_stock
+# The food variable will store a randomly chosen food string like "gummy bear" or "morning bun". Some of these items are in the bakery_stock dictionary, and some are not.
+# Print out a string depending on if food is a value in bakery_stock
 # If food is contained in bakery_stock, print out a string that states how many items are left: "3 left" if food is "toffee cookie" or "1 left" if food is "morning bun"
-# If food is not contained in bakery_stock  (like "gummy bear"), print out "We don't make that"
+# If food is not contained in bakery_stock (like "gummy bear"), print out "We don't make that"
 
 # This code picks a random food item:
 from random import choice
@@ -15,3 +15,11 @@ bakery_stock = {
     "chocolate chunk cookie": 9,
     "tea cake": 25
 }
+
+print(food)
+
+if food in bakery_stock:
+    stock = bakery_stock.get(food)
+    print(f"{stock} left")
+else:
+    print("We don't make that")

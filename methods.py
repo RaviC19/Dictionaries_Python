@@ -16,7 +16,7 @@ dupe is numbers  # returns False because they are unique objects in memory and n
 
 # fromkeys - creates key-value pairs from comma separated values and is only used on an item object {}
 player = {}.fromkeys(["name", "score", "age", "location"], "unknown")
-# would return {'name': 'unknown', 'score': 'unknown', 'age': 'unknown', 'location': 'unknown'}
+# would return dict of {'name': 'unknown', 'score': 'unknown', 'age': 'unknown', 'location': 'unknown'}
 print(player)
 
 # get - if a key is in a dictionary it will return the value, if it doesn't exist it will return as None
